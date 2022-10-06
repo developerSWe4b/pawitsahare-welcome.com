@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Pawit Sahare PXCS
+    </title>
+   
+    </script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+</head>
+<body>
+    <div class="container"
+    >
+        <div class="text">
+            <p>Fill to Continue</p>
+            <h1>Decribe yor promblem With UTF CODE</h1>
+
+         
+            <form onsubmit="reset(); return false;">
+            <input type="text" name="name" placeholder="FullName" required>
+            <input type="email" name="email" placeholder="Your Email" >
+             
+            <input type="text" name="promblem" placeholder="UTF CODE" >
+         
+           
+        </form>
+       <button type="submit"><span></span>Submit</button>
+        <button type="button"><span></span>Download Page</button>
+            
+        </div>
+        
+        
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        function sendEmail(){
+            Email.send({
+    Host : "smtp.gmail.com",
+    Username : "pxcvhosting@gmail.com",
+    Password : "9175861073p",
+    To : 'xyz00web@gmail.com',
+    From : "pawitsahare561@gmail.com",
+    Subject : "This is the subject",
+    Body : "And this is the body"
+}).then(
+             message => alert(message)
+);
+        }
+    </script>
+</body>
